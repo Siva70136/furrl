@@ -1,0 +1,29 @@
+.nav-container{
+    width: 100%;
+    border: 1p solid rgb(222, 219, 219);
+    box-shadow: 1px 0px 0px 1px rgb(201, 199, 199);
+    padding: 8px;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    font-size: 28px;
+}
+
+.app-name{
+    color: blueviolet;
+    font-style: italic;
+    font-weight: 600;
+}
+.wishlist{
+    margin-right: 12px;
+}
+.cart{
+    margin-right: 14px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}

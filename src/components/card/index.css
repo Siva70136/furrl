@@ -1,0 +1,121 @@
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: -90px;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    line-height: 14.63px ;
+    width: 40%;
+    
+}
+.share-icon{
+    position: relative;
+    align-self: flex-end;
+    top: -50px;
+}
+.image{
+    width: 100%;
+    height: 200px;
+}
+.home-data{
+    position: relative;
+    top: -15px;
+}
+.vendor{
+    color: var(--Gray---500, #64748b) ;
+    font-family: montserrat ;
+    font-size: 13px ;
+    font-style: normal ;
+    font-weight: 400 ;
+    line-height: normal ;
+    letter-spacing: .12px ;
+    
+}
+.title{
+    color: var(--Black---900, #001718) ;
+    font-family: montserrat ;
+    font-size: 12px ;
+    font-style: normal ;
+}
+.price-container{
+    display: flex;
+    
+}
+.sp{
+    color: var(--Black---900, #001718) ;
+    font-family: montserrat ;
+    font-size: 15px ;
+    font-style: normal ;
+}
+.cp{
+  
+    color: rgba(100, 116, 139, .7);
+    text-decoration-line: line-through ;
+    font-weight: 600 ;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.dis{
+    color: #7e59e7;
+}
+.rules-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.confirmation {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 500px;
+    box-shadow: 10px 10px 10px 10px #cbd5e1;
+}
+
+.cross {
+    align-self: flex-end;
+    background-color: transparent;
+}
+
+.button1 {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: rgb(183, 10, 246);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.share-image{
+    width: 100px;
+}
+
+@media screen and (max-width:600px) {
+    .confirmation {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 280px;
+        box-shadow: 10px 10px 10px 10px #cbd5e1;
+    }
+
+}
+@media (max-width: 768px) {
+    .card1, .col-sm-8half {
+        float: left;
+    }
+    .card1 {
+        width: 44%;
+    }
+
+}
