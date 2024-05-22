@@ -55,38 +55,36 @@ const ProductItem = () => {
                     >
                         {close => (
                             <>
-                                if(product !==[]){
 
-                                    <div className="confirmation">
-                                        <button
-                                            type="button"
-                                            className="button1 cross"
-                                            onClick={() => close()}
-                                            data-testid="close"
-                                        >
-                                            Close
-                                        </button>
-                                        <div className="card1 ">
-                                            <img src={product.images[0].src} alt={product.vendor} className="share-image" />
-                                            <p className="vendor">{product.vendor}</p>
-                                            <p className="title">{product.title}</p>
-                                            <div className='price-container'>
-                                                <p className='sp'>Rs {product.price.value}</p>
-                                                <p className='cp'>Rs {product.MRP.value}</p>
-                                                <p className='dis'>{product.discountPercent}%</p>
-                                            </div>
-                                        </div>
-                                        <div className="button-container">
-                                            <button
-                                                type="button"
-                                                className="cancel-button button1"
-                                                onClick={() => close()}
-                                            >
-                                                Share
-                                            </button>
+                                <div className="confirmation">
+                                    <button
+                                        type="button"
+                                        className="button1 cross"
+                                        onClick={() => close()}
+                                        data-testid="close"
+                                    >
+                                        Close
+                                    </button>
+                                    <div className="card1 ">
+                                        <img src={product.images[0].src} alt={product.vendor} className="share-image" />
+                                        <p className="vendor">{product.vendor}</p>
+                                        <p className="title">{product.title}</p>
+                                        <div className='price-container'>
+                                            <p className='sp'>Rs {product.price.value}</p>
+                                            <p className='cp'>Rs {product.MRP.value}</p>
+                                            <p className='dis'>{product.discountPercent}%</p>
                                         </div>
                                     </div>
-                                }
+                                    <div className="button-container">
+                                        <button
+                                            type="button"
+                                            className="cancel-button button1"
+                                            onClick={() => close()}
+                                        >
+                                            Share
+                                        </button>
+                                    </div>
+                                </div>
                             </>
                         )}
                     </Popup>
